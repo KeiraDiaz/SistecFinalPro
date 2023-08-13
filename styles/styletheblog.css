@@ -1,0 +1,50 @@
+body {
+  font-family: "Century Gothic", sans-serif;
+}
+
+.card {
+  width: 28rem;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid darkpurple;
+  background-color: lightblue;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.author {
+  color: gray;
+  margin-top: 0.5rem;
+}
+
+.tags {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background-color: lightgray;
+  padding: 0.2rem 0.5rem;
+  margin-right: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    display: block;
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
